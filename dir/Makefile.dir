@@ -1,0 +1,8 @@
+TARGET = -O3
+CXX = g++
+
+dir:
+	${CXX} ${TARGET} -c sub.cpp -o sub.o
+
+clean:
+	${RM} *.o

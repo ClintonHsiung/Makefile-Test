@@ -1,0 +1,12 @@
+TARGET = -O3
+OBJECTS = ./dir/sub.o add.o main.o
+CXX = g++
+
+main.out: ${OBJECTS}
+	${CXX} ${OBJECTS} -o main.out
+
+%.o: %.cpp
+	${CXX} ${TARGET} -c $^ -o $@
+
+clean:
+	${RM} *.o main.out
