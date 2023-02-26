@@ -1,5 +1,5 @@
 TARGET = -O3
-OBJECTS = ./dir/sub.o add.o main.o
+OBJECTS = ./dir/mul.o ./dir/sub.o add.o main.o
 CXX = g++
 
 main.out: ${OBJECTS}

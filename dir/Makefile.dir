@@ -3,6 +3,7 @@ CXX = g++
 
 dir:
 	${CXX} ${TARGET} -c sub.cpp -o sub.o
+	${CXX} ${TARGET} -c mul.cpp -o mul.o
 
 clean:
 	${RM} *.o
